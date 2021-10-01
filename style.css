@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(6, 6, 19);
+    line-height: 1.6;
+ }
+
+h1, h2, p{
+    padding: 0;
+
+}
+
+ body {
+     margin: 0 !important;
+ }
+
+ ul{
+     list-style-type: none;
+ }
+
+ a {
+     text-decoration: none;
+     color: blueviolet;
+ }
+
+.navbar {
+    background-color: rgb(241, 68, 24);
+    color: cornflowerblue;
+    height: 70px;
+}
+
+ .navbar ul{
+     display: flex;
+ }
+
+
+ .navbar a{
+     color: rgb(239, 236, 247);
+     padding: 10px;
+     margin: 0 5px;
+ }
+
+ .navbar a:hover{
+     border-bottom: 2px white solid;
+ }
+
+ .navbar h1{
+     color: rgb(237, 234, 240);
+     margin: 0 5px;
+ }
+
+.show{
+    height: 400px;
+    background-color: rgb(42, 143, 47);
+    color: thistle;
+    position: relative;
+}
+
+.show-from {
+    position: relative;
+    top: 60px;
+    height: 300px;
+    width: 400px;
+    padding: 40px;
+    justify-self: flex-end;
+}
+.show .grid{
+    overflow: visible;
+}
+
+.show-from input[type="text"],
+.show-from input[type="email"]  {
+    border: none;
+    border-bottom: 1px solid;
+    width: 100%;
+    padding: 40px 0 0 0;
+    font-size: 16px;
+}
+
+.show-from input:focus{
+    outline: none;
+}
+
+ /* Utility Classes*/
+
+ .container {
+     max-width: 1100px;
+     margin: 0 auto;
+     overflow: auto;
+     padding: 0 40px;
+ }
+
+ .flex{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 100%;
+ }
+
+ .grid{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+ }
+
+ .card {
+     background-color: white;
+     color: #333;
+     border-radius: 10px;
+     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.205);
+     padding: 20px;
+     margin: 10px;
+ }
+
+ .btn{
+     display: inline-block;
+     margin-top: 20px;
+     padding: 10px 30px ;
+     cursor: pointer;
+     background-color: burlywood;
+     color: black;
+     border: none;
+     border-radius: 5px;
+ }
+
+ .btn:hover{
+     transform: scale(0.96);
+ }
+
+ .btn-outline{
+     background-color: transparent;
+     border: 1px white solid;
+ }
+/*pic section */
+ .pic .container img {
+     width: 70%;
+ }
+
+ .pic{
+     margin-top: 5rem;
+ }
+
+ /* Utility for margin/padding */
+
+
+/*Done Section*/
+.more .container .text-center{
+    color: blue;
+}
+
+.more .container img{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Lang Section style*/
+
+.lang .flex{
+    flex-wrap: wrap;
+}
+
+.lang .card{
+    margin: 18px, 10px, 40px;
+    transition: 1s ease;
+}
+
+.lang .card img{
+    width: 200px;
+}
+
+.text-center h2, p, a{
+    color: white;
+
+}
+
+.lang .card h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lang .card:hover{
+    transform: translateY(-15px);
+}
+
+/* Next section footer */
+
+.footer a{
+    color: white;
+}
+
+.footer .container h1{
+    color: white;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+
+.services-head .grid img{
+    width: 200px;
+    
+    justify-self: end;
+}
+
+/*.Hi h1,p{
+    color: white;
+}*/
+.x1{
+    color: white;
+}
+
+.lead{
+    color: white;
+}
+
+.yt h1, p{
+    color: black;
+}
+
+@media(max-width: 768px){
+    .grid,
+    .show .grid, 
+    .pic .grid,
+    .more .grid,
+    .footer .grid{
+        grid-template-columns: 1fr;
+    }
+
+
+    .show {
+        height: auto;
+    }
+
+    .show-from{
+        justify-self: center;
+    }
+
+    .pic img{
+        justify-self: center;
+    }
+
+    .show-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .lang .flex{
+        justify-self: center;
+    }
+
+    .footer .grid-3{
+        text-align: center;
+    }
+}
